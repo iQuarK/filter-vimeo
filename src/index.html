@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment from Schibsted</title>
+    <link href='css/styles.css' rel="stylesheet">
+  </head>
+  <body>
+    <div id="controls">
+      <label for="itemsPage">Items per page</label>
+      <select id="itemsPage">
+        <option value="10">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+      </select>
+
+      <label for="filterUsers">Filter users by Like>10</label>
+      <input type="checkbox" id="filterUsers">
+
+      <label for="filterDescription">Search</label>
+      <input type="text" id="filterDescription">
+    </div>
+
+    <div id="pagination"><span id="pageNumber"></span><input type="button" id="nextPage" value="Next"></div>
+
+    <div id="content">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/data.js" type="text/javascript"></script>
+    <script src="js/listfilter.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>

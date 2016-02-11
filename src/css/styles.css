@@ -1,0 +1,71 @@
+body {
+ font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 75%;
+
+}
+
+ul img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.video {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.video .info h2 {
+  font-size: 14pt;
+  margin-top: 0;
+}
+.video .info h2 a {
+  text-decoration: none;
+  color: black;
+}
+.video .info h2 a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.video .info .description {
+  font-weight: 300;
+  font-size: 9pt;
+}
+
+.video .info .meta {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-direction: row;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  border-top: lightgray solid thin;
+  font-size: 9pt;
+}
+
+#controls, #pagination {
+  margin: 20px auto;
+  width: 75%;
+}
+
+#controls label {
+  margin-left: 50px;
+}
+#controls label:first-child {
+  margin-left: 0px;
+}
