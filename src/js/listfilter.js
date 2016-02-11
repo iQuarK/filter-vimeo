@@ -1,6 +1,7 @@
 'use strict';
 /* globals $ */
 
+ /*jshint unused:false*/
 function ListFilter(dataSet) {
   var data = dataSet.data;
   var itemsPerPage = 10;
@@ -37,7 +38,7 @@ function ListFilter(dataSet) {
     currentList = currentList.filter( function(item) {
       var result = false;
       if (!!item.description) {
-        result = item.description.indexOf(text)>-1
+        result = item.description.indexOf(text)>-1;
       }
       
       return result;
